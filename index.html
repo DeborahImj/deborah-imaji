@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Frontend Developer</title>
+<meta name="description" content="Portfolio of [Your Name], a frontend developer building responsive, real-world websites.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a href="#top" class="nav__logo">&lt;/&gt; <span>YourName</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="resume.pdf" class="btn btn--small btn--dark nav__resume" download>Resume ↓</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HOME / HERO ============ -->
+<section class="hero" id="home">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">// frontend developer</p>
+      <h1 class="hero__headline">
+        Hi, I'm <span class="hl">[Your Name]</span>.<br>
+        I build interfaces<br> that actually work.
+      </h1>
+      <p class="hero__sub">
+        Self-taught frontend developer focused on clean, responsive
+        websites — built with HTML, CSS and JavaScript, and shipped
+        for real people to use.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--dark">View My Work</a>
+        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+      </div>
+
+      <div class="hero__social" aria-label="Social links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+        <a href="mailto:you@email.com" aria-label="Email">@</a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="codewindow">
+        <div class="codewindow__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="codewindow__title">index.html</span>
+        </div>
+        <div class="codewindow__body">
+          <p><span class="tok tag">&lt;div</span> <span class="tok attr">class</span>=<span class="tok str">"hero"</span><span class="tok tag">&gt;</span></p>
+          <p class="indent"><span class="tok tag">&lt;h1&gt;</span><span class="tok txt">Hello, world.</span><span class="tok tag">&lt;/h1&gt;</span></p>
+          <p class="indent"><span class="tok tag">&lt;p&gt;</span><span class="tok txt">Built from scratch.</span><span class="tok tag">&lt;/p&gt;</span></p>
+          <p><span class="tok tag">&lt;/div&gt;</span></p>
+          <p class="cursor-line"><span class="blink">▍</span></p>
+        </div>
+      </div>
+
+      <div class="commitgrid" aria-hidden="true">
+        <!-- 7x6 dot grid, generated with varying opacity classes -->
+      </div>
+      <p class="commitgrid__caption">consistency &gt; intensity</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT (optional — delete this whole <section> if you don't want it) ============ -->
+<section class="about" id="about">
+  <div class="wrap about__inner">
+    <div class="about__photo" aria-hidden="true">
+      <div class="about__photo-box">Add your photo here</div>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow">// about</p>
+      <h2 class="section-title">A short version of my story</h2>
+      <p>
+        I taught myself to code because I wanted a skill that depended on
+        me, not on circumstances outside my control. I started with
+        HTML and CSS, built real responsive projects, then completed
+        the SheCodes bootcamp end-to-end — five courses, five certificates.
+      </p>
+      <p>
+        Right now I'm working through 100Devs, focused on the part that
+        turns skill into income: freelancing, interviews, and real
+        collaborative work. I'm not looking for someone to teach me the
+        basics — I'm looking to build, ship, and get paid for what I
+        already know how to do.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS & SERVICES (combined) ============ -->
+<section class="skills" id="skills">
+  <div class="wrap">
+    <p class="eyebrow">// what I bring</p>
+    <h2 class="section-title">Skills &amp; Services</h2>
+
+    <div class="skills__grid">
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Responsive Design</span>
+      <span class="chip">Git &amp; GitHub</span>
+      <span class="chip">Figma → Code</span>
+    </div>
+
+    <div class="services__grid">
+      <div class="service">
+        <span class="service__num">01</span>
+        <h3>Landing Pages</h3>
+        <p>Fast, responsive landing pages built to convert — from a design file or from scratch.</p>
+      </div>
+      <div class="service">
+        <span class="service__num">02</span>
+        <h3>Responsive Websites</h3>
+        <p>Full multi-section websites that work cleanly on any screen size, phone to desktop.</p>
+      </div>
+      <div class="service">
+        <span class="service__num">03</span>
+        <h3>Bug Fixes &amp; Features</h3>
+        <p>Cleaning up, debugging, or adding new functionality to an existing site.</p>
+      </div>
+      <div class="service">
+        <span class="service__num">04</span>
+        <h3>Website Refresh</h3>
+        <p>Modernizing an outdated site's layout, styling, and mobile responsiveness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light">// selected work</p>
+    <h2 class="section-title section-title--light">Projects</h2>
+
+    <div class="project">
+      <div class="project__media">
+        <div class="project__placeholder">Add project screenshot</div>
+      </div>
+      <div class="project__info">
+        <span class="project__tag">Project 01</span>
+        <h3>[Project Name]</h3>
+        <p>One or two sentences on what this project does and who it's for.</p>
+        <div class="project__stack">
+          <span class="chip chip--dark">HTML</span>
+          <span class="chip chip--dark">CSS</span>
+          <span class="chip chip--dark">JavaScript</span>
+        </div>
+        <div class="project__links">
+          <a href="#" class="link-arrow">Live Demo ↗</a>
+          <a href="#" class="link-arrow">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project project--reverse">
+      <div class="project__media">
+        <div class="project__placeholder">Add project screenshot</div>
+      </div>
+      <div class="project__info">
+        <span class="project__tag">Project 02</span>
+        <h3>[Project Name]</h3>
+        <p>One or two sentences on what this project does and who it's for.</p>
+        <div class="project__stack">
+          <span class="chip chip--dark">HTML</span>
+          <span class="chip chip--dark">CSS</span>
+          <span class="chip chip--dark">JavaScript</span>
+        </div>
+        <div class="project__links">
+          <a href="#" class="link-arrow">Live Demo ↗</a>
+          <a href="#" class="link-arrow">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate the .project block above for a 3rd project if you want one -->
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE (certificates + resume) ============ -->
+<section class="experience" id="experience">
+  <div class="wrap">
+    <p class="eyebrow">// credentials</p>
+    <h2 class="section-title">Experience &amp; Certificates</h2>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="timeline__content">
+          <span class="timeline__date">2024</span>
+          <h3>SheCodes Bootcamp — 5 Certificates</h3>
+          <p>Completed all five SheCodes courses end-to-end, each with a final project: HTML, CSS, JavaScript, Responsive Design, and Git &amp; GitHub.</p>
+          <a href="#" class="link-arrow">View Certificates ↗</a>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="timeline__content">
+          <span class="timeline__date">In Progress</span>
+          <h3>100Devs Full-Stack Bootcamp</h3>
+          <p>Currently focused on job-readiness: freelancing, technical interviews, and real-world collaborative projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-card">
+      <div>
+        <h3>Full Resume</h3>
+        <p>See my full background, skills, and experience in one document.</p>
+      </div>
+      <a href="resume.pdf" class="btn btn--dark" download>Download Resume ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT & FOOTER (combined) ============ -->
+<footer class="contact" id="contact">
+  <div class="wrap contact__inner">
+    <p class="eyebrow eyebrow--light">// let's talk</p>
+    <h2 class="section-title section-title--light">Let's build something.</h2>
+    <p class="contact__sub">Have a project in mind, or an opportunity to share? I'd love to hear from you.</p>
+
+    <a href="mailto:you@email.com" class="contact__email">you@email.com</a>
+
+    <div class="contact__social">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+    </div>
+  </div>
+
+  <div class="wrap footer__bottom">
+    <span>© <span id="year"></span> [Your Name]</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
