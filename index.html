@@ -1,263 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deborah Imaji</title>
-<meta name="description" content="Portfolio of [Your Name], a frontend developer building responsive, real-world websites.">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+		<title>TechCrunch</title>
 
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
 
-<!-- ============ NAV ============ -->
-<header class="nav" id="top">
-  <div class="wrap nav__inner">
-    <a href="#top" class="nav__logo">&lt;/&gt; <span>YourName</span></a>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <img src="assets/techcrunch-logo.jpg" alt="TechCrunch logo" class="nav-logo">
+          <a class="nav-plus-link">Join TechCrunch+</a>
+          <a>Login</a>
 
-    <nav class="nav__links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+          <ul>
+            <li>
+              <a>
+                Search
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </a>
+            </li>
+            <li>
+              <a>Startups</a>
+            </li>
+            <li>
+              <a>TechCrunch+</a>
+            </li>
+            <li>
+              <a>Audio</a>
+            </li>
+            <li>
+              <a>Newsletters</a>
+            </li>
+            <li>
+              <a>Videos</a>
+            </li>
+            <li>
+              <a>Advertise</a>
+            </li>
+            <li>
+              <a>Events</a>
+            </li>
+            <li>
+              <a>More</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="top">
+          <section class="top-left">
+            <h1>Microsoft to buy Activision Blizzard for $68.7 billion</h1>
+            <span class="author">Amanda Silberling</span>
+            <img src="assets/activision.jpg" alt="Activision Blizzard studio">
+          </section>
 
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+          <section class="top-right">
+            <div>
+              <h2 class="story-title">Register today for DeFi and the Future of Programmable Money Summit</h2>
+              <span class="author">Alexandra Ames</span>
+            </div>
 
-<!-- ============ HOME / HERO ============ -->
-<section class="hero" id="home">
-  <div class="wrap hero__inner">
-    <div class="hero__text">
-      <p class="eyebrow">// frontend developer</p>
-      <h1 class="hero__headline">
-        Hi, I'm <span class="hl">[Your Name]</span>.<br>
-        I build interfaces<br> that actually work.
-      </h1>
-      <p class="hero__sub">
-        Self-taught frontend developer focused on clean, responsive
-        websites — built with HTML, CSS and JavaScript, and shipped
-        for real people to use.
-      </p>
-      <div class="hero__cta">
-        <a href="#projects" class="btn btn--dark">View My Work</a>
-        <a href="#contact" class="btn btn--outline">Get In Touch</a>
-      </div>
+            <div>
+              <img src="assets/techcrunch-plus-icon.jpg" class="plus-story">
+              <h2 class="story-title">For investors, future of work isn't only about HR</h2>
+              <span class="author">Anna Heim</span>
+            </div>
 
-      <div class="hero__social" aria-label="Social links">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
-        <a href="mailto:you@email.com" aria-label="Email">@</a>
-      </div>
+            <div>
+              <h2 class="story-title">Upward plans to open a 250,000-square-foot vertical farm in PA early next year</h2>
+              <span class="author">Brian Heater</span>
+            </div>
+
+            <div>
+              <h2 class="story-title">Wayve raises $200M Series B led by Eclipse for its AI for autonomous delivery vehicles</h2>
+              <span class="author">Mike Butcher</span>
+            </div>
+          </section>
+        </section>
+
+        <section class="bottom">
+          <h2 class="bottom-heading">The Latest</h2>
+          <div class="bottom-story">
+            <div class="story-details">
+              <h2 class="story-title">Snapchat says it's getting better at finding illicit drug dealers before users do</h2>
+              <span class="author">Taylor Hatmaker</span>
+              <span class="story-date">11:15 AM PST ● January 18, 2022</span>
+            </div>
+
+            <p>
+              Snapchat has faced increasing criticism in recent years as the opioid crisis plays out on social media, often with tragic results. In October, an NBC investigation reported the stories of a number ...
+            </p>
+
+            <img src="assets/snapchat.jpeg" alt="Snapchat on a phone" class="story-image">
+          </div>
+
+          <div class="bottom-story">
+            <div class="story-details">
+              <img src="assets/techcrunch-plus-icon.jpg" alt="TechCrunch plus icon" class="plus-story">
+              <h2 class="story-title">Will quantum computing remain the domain of the specialist VC?</h2>
+              <span class="author">Maria Lepskaya</span>
+              <span class="story-date">11:06 AM PST ● January 18, 2022</span>
+            </div>
+
+            <p>
+              Despite all the buzz, quantum investments are still not mainstream: there were about 90 quantum investments in 2021.
+            </p>
+
+            <img src="assets/quantum.jpeg" alt="Snapchat on a phone" class="story-image">
+          </div>
+
+          <div class="bottom-story">
+            <div class="story-details">
+              <h2 class="story-title">Ex-Dispo founding members launch Roll app, where creators post exclusive content</h2>
+              <span class="author">Amanda Silberling</span>
+              <span class="story-date">10:00 AM PST ● January 18, 2022</span>
+            </div>
+
+            <p>
+              Today marks the launch of the Roll app, which aims to create an easy way for creators to make an extra buck while portraying a potentially morenauthentic version of themselves to their fans. Alread...
+            </p>
+
+            <img src="assets/roll.jpg" alt="Roll app banner" class="story-image">
+          </div>
+        </section>
+      </main>
     </div>
-
-    <div class="hero__visual" aria-hidden="true">
-      <div class="codewindow">
-        <div class="codewindow__bar">
-          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-          <span class="codewindow__title">index.html</span>
-        </div>
-        <div class="codewindow__body">
-          <p><span class="tok tag">&lt;div</span> <span class="tok attr">class</span>=<span class="tok str">"hero"</span><span class="tok tag">&gt;</span></p>
-          <p class="indent"><span class="tok tag">&lt;h1&gt;</span><span class="tok txt">Hello, world.</span><span class="tok tag">&lt;/h1&gt;</span></p>
-          <p class="indent"><span class="tok tag">&lt;p&gt;</span><span class="tok txt">Built from scratch.</span><span class="tok tag">&lt;/p&gt;</span></p>
-          <p><span class="tok tag">&lt;/div&gt;</span></p>
-          <p class="cursor-line"><span class="blink">▍</span></p>
-        </div>
-      </div>
-
-      <div class="commitgrid" aria-hidden="true">
-        <!-- 7x6 dot grid, generated with varying opacity classes -->
-      </div>
-      <p class="commitgrid__caption">consistency &gt; intensity</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABOUT (optional — ============ -->
-<section class="about" id="about">
-  <div class="wrap about__inner">
-    <div class="about__photo" aria-hidden="true">
-      <div class="about__photo-box">Add your photo here</div>
-    </div>
-    <div class="about__text">
-      <p class="eyebrow">// about</p>
-      <h2 class="section-title">A short version of my story</h2>
-      <p>
-        I taught myself to code because I wanted a skill that depended on
-        me, not on circumstances outside my control. I started with
-        HTML and CSS, built real responsive projects, then completed
-        the SheCodes bootcamp end-to-end — five courses, five certificates.
-      </p>
-      <p>
-        Right now I'm working through 100Devs, focused on the part that
-        turns skill into income: freelancing, interviews, and real
-        collaborative work. I'm not looking for someone to teach me the
-        basics — I'm looking to build, ship, and get paid for what I
-        already know how to do.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SKILLS & SERVICES (combined) ============ -->
-<section class="skills" id="skills">
-  <div class="wrap">
-    <p class="eyebrow">// what I bring</p>
-    <h2 class="section-title">Skills &amp; Services</h2>
-
-    <div class="skills__grid">
-      <span class="chip">HTML</span>
-      <span class="chip">CSS</span>
-      <span class="chip">JavaScript</span>
-      <span class="chip">Responsive Design</span>
-      <span class="chip">Git &amp; GitHub</span>
-      <span class="chip">Figma → Code</span>
-    </div>
-
-    <div class="services__grid">
-      <div class="service">
-        <span class="service__num">01</span>
-        <h3>Landing Pages</h3>
-        <p>Fast, responsive landing pages built to convert — from a design file or from scratch.</p>
-      </div>
-      <div class="service">
-        <span class="service__num">02</span>
-        <h3>Responsive Websites</h3>
-        <p>Full multi-section websites that work cleanly on any screen size, phone to desktop.</p>
-      </div>
-      <div class="service">
-        <span class="service__num">03</span>
-        <h3>Bug Fixes &amp; Features</h3>
-        <p>Cleaning up, debugging, or adding new functionality to an existing site.</p>
-      </div>
-      <div class="service">
-        <span class="service__num">04</span>
-        <h3>Website Refresh</h3>
-        <p>Modernizing an outdated site's layout, styling, and mobile responsiveness.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROJECTS ============ -->
-<section class="projects" id="projects">
-  <div class="wrap">
-    <p class="eyebrow eyebrow--light">// selected work</p>
-    <h2 class="section-title section-title--light">Projects</h2>
-
-    <div class="project">
-      <div class="project__media">
-        <div class="project__placeholder">Add project screenshot</div>
-      </div>
-      <div class="project__info">
-        <span class="project__tag">Project 01</span>
-        <h3>[Project Name]</h3>
-        <p>One or two sentences on what this project does and who it's for.</p>
-        <div class="project__stack">
-          <span class="chip chip--dark">HTML</span>
-          <span class="chip chip--dark">CSS</span>
-          <span class="chip chip--dark">JavaScript</span>
-        </div>
-        <div class="project__links">
-          <a href="#" class="link-arrow">Live Demo ↗</a>
-          <a href="#" class="link-arrow">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project project--reverse">
-      <div class="project__media">
-        <div class="project__placeholder">Add project screenshot</div>
-      </div>
-      <div class="project__info">
-        <span class="project__tag">Project 02</span>
-        <h3>[Project Name]</h3>
-        <p>One or two sentences on what this project does and who it's for.</p>
-        <div class="project__stack">
-          <span class="chip chip--dark">HTML</span>
-          <span class="chip chip--dark">CSS</span>
-          <span class="chip chip--dark">JavaScript</span>
-        </div>
-        <div class="project__links">
-          <a href="#" class="link-arrow">Live Demo ↗</a>
-          <a href="#" class="link-arrow">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ============ EXPERIENCE (certificates + resume) ============ -->
-<section class="experience" id="experience">
-  <div class="wrap">
-    <p class="eyebrow">// credentials</p>
-    <h2 class="section-title">Experience &amp; Certificates</h2>
-
-    <div class="timeline">
-      <div class="timeline__item">
-        <span class="timeline__dot"></span>
-        <div class="timeline__content">
-          <span class="timeline__date">2024</span>
-          <h3>SheCodes Bootcamp — 5 Certificates</h3>
-          <p>Completed all five SheCodes courses end-to-end, each with a final project: HTML, CSS, JavaScript, Responsive Design, and Git &amp; GitHub.</p>
-          <a href="#" class="link-arrow">View Certificates ↗</a>
-        </div>
-      </div>
-
-      <div class="timeline__item">
-        <span class="timeline__dot"></span>
-        <div class="timeline__content">
-          <span class="timeline__date">In Progress</span>
-          <h3>100Devs Full-Stack Bootcamp</h3>
-          <p>Currently focused on job-readiness: freelancing, technical interviews, and real-world collaborative projects.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="resume-card">
-      <div>
-        <h3>Full Resume</h3>
-        <p>See my full background, skills, and experience in one document.</p>
-      </div>
-      <a href="resume.pdf" class="btn btn--dark" download>Download Resume ↓</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT & FOOTER (combined) ============ -->
-<footer class="contact" id="contact">
-  <div class="wrap contact__inner">
-    <p class="eyebrow eyebrow--light">// let's talk</p>
-    <h2 class="section-title section-title--light">Let's build something.</h2>
-    <p class="contact__sub">Have a project in mind, or an opportunity to share? I'd love to hear from you.</p>
-
-    <a href="mailto:you@email.com" class="contact__email">you@email.com</a>
-
-    <div class="contact__social">
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="#" target="_blank" rel="noopener">Twitter / X</a>
-    </div>
-  </div>
-
-  <div class="wrap footer__bottom">
-    <span>© <span id="year"></span> [Your Name]</span>
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+    
+	</body>
 </html>
