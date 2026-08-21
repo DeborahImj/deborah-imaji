@@ -165,7 +165,9 @@ background: radial-gradient(at center, #B5FB99, #84DD4D);
   .nav__inner {
     align-items: stretch;
     border: none;
+    border-radius: 25px;
     flex-direction: column;
+    gap: 0;
     justify-content: space-between;
     margin: 0 25px;
     overflow: hidden;
@@ -180,24 +182,28 @@ background: radial-gradient(at center, #B5FB99, #84DD4D);
   }
   
   .nav__links{
-    /*top:100%; left:0; right:0;
-    background: var(--paper);*/
     flex-direction:column;
     gap:18px;
-
     position: static;
     max-height: 0;
     overflow: hidden;
     padding: 0 0;
     transition: max-height 0.3s ease, padding 0.3s ease;
     background: transparent;
+    margin: 0;
   }
   
   .nav__links.is-open{
+    margin: 20px 0 0 0;
     max-height: 400px;
     padding: 20px 0 8px;
   }
   .nav__toggle{ display:flex; }
+
+  .nav__links a {
+    font-size: 2rem;
+    font-weight: 600;
+  }
 }
 
 /* ============================================
