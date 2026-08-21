@@ -201,6 +201,11 @@ background: radial-gradient(at center, #B5FB99, #84DD4D);
   .nav__toggle{ display:flex; }
 
   .nav__links a {
+    background: #C6FCA6FF;
+background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
     font-size: 2rem;
     font-weight: 600;
   }
