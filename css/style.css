@@ -171,7 +171,7 @@ background: radial-gradient(at center, #B5FB99, #84DD4D);
     justify-content: space-between;
     margin: 0 25px;
     overflow: hidden;
-    padding: 12px 18px;
+    padding: 12px 22px;
     width: 100%;
   }
 
@@ -208,6 +208,7 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
   color: transparent;
     font-size: 2rem;
     font-weight: 600;
+    opacity: 1;
   }
 }
 
@@ -215,6 +216,23 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
    HERO
    ============================================ */
 .hero{ padding: 90px 0 70px; }
+
+.hero-noise-container {
+  inset: 0 0 -100px;
+  opacity: 0.17;
+  position: absolute;
+}
+
+.hero-noise {
+  background-image: url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png');
+  background-repeat: repeat;
+  background-size: 128px;
+  border-radius: 0;
+  height: 100%;
+  opacity: 0.4;
+  width: 100%;
+}
+
 .hero__inner{
   display:grid;
   grid-template-columns: 1.1fr 0.9fr;
