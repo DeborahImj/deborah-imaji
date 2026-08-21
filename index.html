@@ -18,7 +18,13 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="top">
   <div class="wrap nav__inner">
-    <a href="#top" class="nav__logo">&lt;/&gt; <span>DeborahImaji</span></a>
+    <div class="mobile-nav">
+      <a href="#top" class="nav__logo">&lt;/&gt; <span>DeborahImaji</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+      </button>
+    </div>
 
     <nav class="nav__links" id="navLinks">
       <a href="#home">Home</a>
@@ -28,10 +34,6 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
