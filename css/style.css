@@ -215,12 +215,17 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
 /* ============================================
    HERO
    ============================================ */
-.hero{ padding: 90px 0 70px; }
+.hero {
+  padding: 90px 0 70px;
+  position: relative;
+}
 
 .hero-noise-container {
-  inset: 0 0 -100px;
+  inset: 0;
   opacity: 0.17;
+  pointer-events: none;
   position: absolute;
+  z-index: 0;
 }
 
 .hero-noise {
@@ -238,6 +243,8 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
   grid-template-columns: 1.1fr 0.9fr;
   gap: 60px;
   align-items:center;
+  position: relative;
+  z-index: 1;
 }
 .hero__headline{
   font-size: clamp(2.2rem, 5vw, 3.4rem);
