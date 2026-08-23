@@ -215,9 +215,20 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
 /* ============================================
    HERO
    ============================================ */
+
 .hero {
   padding: 90px 0 70px;
   position: relative;
+}
+
+.hero-bg {
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -80px;
+  z-index: 0;
 }
 
 .hero-noise-container {
@@ -236,6 +247,12 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
   height: 100%;
   opacity: 0.4;
   width: 100%;
+}
+
+.hero-light-wrapper {
+  inset: 0 -96px;
+  mix-blend-mode: color-dodge;
+  opacity: 0.5;
 }
 
 .hero__inner{
