@@ -217,8 +217,30 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
    ============================================ */
 
 .hero {
+  background-color: var(--bg);
   padding: 90px 0 70px;
   position: relative;
+}
+
+.hero-gradient-wrapper {
+  background: linear-gradient(180deg,rgba(18,24,30,0) -18.549815220254256%,#051218 95.51804331448707%);
+  height: 900px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg,var(--bg, #081822) 0%,rgba(14,28,34,0) 100%);
+  height: 124px;
+  left: 0;
+  opacity: 0.74;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 30px;
 }
 
 .hero-bg {
@@ -253,6 +275,26 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
   inset: 0 -96px;
   mix-blend-mode: color-dodge;
   opacity: 0.5;
+  position: absolute;
+}
+
+.hero-light {
+  border-radius: inherit;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero-light img {
+  border-radius: inherit;
+  display: block;
+  height: 100%;
+  image-rendering: auto;
+  object-fit: fill;
+  object-position: center;
+  width: 100%;
 }
 
 .hero__inner{
