@@ -217,14 +217,14 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
    ============================================ */
 
 .hero {
-  background-color: var(--bg);
+  background: var(--bg);
   padding: 90px 0 70px;
   position: relative;
 }
 
 .hero-gradient-wrapper {
   background: linear-gradient(180deg,rgba(18,24,30,0) -18.549815220254256%,#051218 95.51804331448707%);
-  height: 900px;
+  height: 100%;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -388,6 +388,13 @@ background: linear-gradient(to right, #FFF, #C6FCA6FF, #C6FCA6FF);
 }
 
 @media (max-width: 900px){
+  .hero-light-wrapper {
+    inset: -37px -132px -38px -106px;
+  }
+
+  .hero-gradient-wrapper {
+    background: linear-gradient(180deg,rgba(18,24,30,0) -18.549815220254256%,#051218 80%);
+  }
   .hero__inner{ grid-template-columns: 1fr; }
   .hero__visual{ order:-1; }
 }
