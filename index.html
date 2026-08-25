@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deborah Imaji</title>
+<title>Your Name — Frontend Developer</title>
 <meta name="description" content="Portfolio of [Your Name], a frontend developer building responsive, real-world websites.">
 
 <!-- Fonts -->
@@ -11,20 +11,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
+<!-- ============ NAV ============ -->
 <header class="nav" id="top">
   <div class="wrap nav__inner">
-    <div class="mobile-nav">
-      <a href="#top" class="nav__logo">&lt;/&gt; <span>DeborahImaji</span></a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-      </button>
-    </div>
+    <a href="#top" class="nav__logo">&lt;/&gt; <span>YourName</span></a>
 
     <nav class="nav__links" id="navLinks">
       <a href="#home">Home</a>
@@ -34,32 +28,17 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a href="resume.pdf" class="btn btn--small btn--dark nav__resume" download>Resume ↓</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <!-- ============ HOME / HERO ============ -->
-<section class="hero" id="home"> 
-  <div class="hero-bg">
-    <div class="hero-gradient-wrapper">
-      <div class="hero-gradient"></div>
-    </div>
-    
-    <div class="hero-noise-container">
-      <div class="hero-noise"></div>
-    </div>
-
-    <div class="hero-light-wrapper">
-      <div class="hero-light">
-        <img src="https://framerusercontent.com/images/yxPGdnSpJrMnMtadavrDo1eo4.png" alt="Spotlight">
-      </div>
-    </div>
-
-    <div class="hero-circles">
-      <div class="hero-ellipse c1047"></div>
-      <div class="hero-ellipse c1046"></div>
-    </div>
-  </div>
-  
+<section class="hero" id="home">
   <div class="wrap hero__inner">
     <div class="hero__text">
       <p class="eyebrow">// frontend developer</p>
@@ -107,7 +86,7 @@
   </div>
 </section>
 
-<!-- ============ ABOUT (optional — ============ -->
+<!-- ============ ABOUT (optional — delete this whole <section> if you don't want it) ============ -->
 <section class="about" id="about">
   <div class="wrap about__inner">
     <div class="about__photo" aria-hidden="true">
@@ -219,6 +198,7 @@
       </div>
     </div>
 
+    <!-- Duplicate the .project block above for a 3rd project if you want one -->
   </div>
 </section>
 
@@ -281,6 +261,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
