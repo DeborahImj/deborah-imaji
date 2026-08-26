@@ -334,8 +334,14 @@ p{ margin:0; }
   display:flex; align-items:center; justify-content:center;
   color: rgba(250,249,246,0.5);
   font-size:0.9rem;
+  overflow: hidden;
   text-align:center;
-  padding:20px;
+  /*padding:20px;*/
+}
+
+.project__placeholder img {
+  height: 100%;
+  width: 100%;
 }
 .project__tag{
   font-family: var(--font-mono);
